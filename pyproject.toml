@@ -1,0 +1,17 @@
+[project]
+name = "bigdataframework-lab3"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "m-lebourdais-ece", email = "mateo.lebourdais@edu.ece.fr" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+bigdataframework-lab3 = "bigdataframework_lab3:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
