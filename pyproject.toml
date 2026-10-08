@@ -7,10 +7,13 @@ authors = [
     { name = "m-lebourdais-ece", email = "mateo.lebourdais@edu.ece.fr" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "faker>=40.37.0",
+]
 
 [project.scripts]
-bigdataframework-lab3 = "bigdataframework_lab3:main"
+dataset-users = "bigdataframework_lab3.dataset_users:main"
+dataset-orders = "bigdataframework_lab3.dataset_orders:main"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
