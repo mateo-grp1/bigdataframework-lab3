@@ -7,6 +7,14 @@ models:
         data_tests:
           - unique
           - not_null
+      - name: username_normalized
+        description: Username without leading and trailing whitespace, in lowercase.
+        data_tests:
+          - not_null
+      - name: username_normalized
+        description: "Nom d'utilisateur nettoyé : espaces retirés en début et fin, converti en minuscules."
+        data_tests:
+          - unique
       - name: email
         data_tests:
           - unique
